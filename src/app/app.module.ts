@@ -19,7 +19,7 @@ import { ContactService } from './services/contact.service';
     AppComponent,
     AddContactComponent,
     ListContactsComponent,
-    NavbarComponent
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
