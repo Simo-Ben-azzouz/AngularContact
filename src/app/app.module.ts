@@ -12,6 +12,7 @@ import { environment } from '../environments/environment.development';
 import { AddContactComponent } from './components/add-contact/add-contact.component';
 import { ListContactsComponent } from './components/list-contacts/list-contacts.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ContactService } from './services/contact.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
     AngularFireDatabaseModule,
     FirestoreModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
