@@ -9,10 +9,16 @@ import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { FirestoreModule } from '@angular/fire/firestore';
 
 import { environment } from '../environments/environment.development';
+import { AddContactComponent } from './components/add-contact/add-contact.component';
+import { ListContactsComponent } from './components/list-contacts/list-contacts.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AddContactComponent,
+    ListContactsComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
