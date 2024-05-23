@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Contact } from '../../models/contact';
 
 @Component({
   selector: 'app-add-contact',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AddContactComponent {
 
+  statusContact : boolean = false;
+
+  contact : Contact = {
+    name : '',
+    telephone : 0
+  }
 }

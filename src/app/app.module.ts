@@ -13,6 +13,7 @@ import { AddContactComponent } from './components/add-contact/add-contact.compon
 import { ListContactsComponent } from './components/list-contacts/list-contacts.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ContactService } from './services/contact.service';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ContactService } from './services/contact.service';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFireDatabaseModule,
-    FirestoreModule
+    FirestoreModule,
+    FormsModule
   ],
   providers: [ContactService],
   bootstrap: [AppComponent]
