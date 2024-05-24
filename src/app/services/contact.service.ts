@@ -21,5 +21,10 @@ getContact ()
 {
   return this.contact;
 }
+
+createContact (contact : Contact)
+{
+  this.contactsCollection.add(contact);
+}
 }
 

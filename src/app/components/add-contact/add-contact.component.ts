@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Contact } from '../../models/contact';
+import { ContactService } from '../../services/contact.service';
 
 @Component({
   selector: 'app-add-contact',
@@ -13,5 +14,18 @@ export class AddContactComponent {
   contact : Contact = {
     name : '',
     telephone : 0
+  }
+
+  /**
+   *
+   */
+  constructor(private contactService : ContactService) {
+    
+    
+  }
+
+  newContact()
+  {
+    this.contactService.createContact(this.contact);
   }
 }

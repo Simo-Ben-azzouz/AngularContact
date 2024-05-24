@@ -1,6 +1,7 @@
 <br>
 <div class="row" *ngIf="statusContact">
     <div class="col s12">
+        <form (ngSubmit)="newContact()">
         <div class="row">
             <div class="input-field col s6">
                 <i class="fa fa-user prefix"></i>
@@ -14,7 +15,9 @@
                     <label for="">Telephone</label>        
                 </div>
         </div>
-            <button class="btn-large red" type="submit" >SUBMIT</button>
+        <button class="btn-large red" type="submit" >SUBMIT</button>
+    </form>
+           
     </div>
     
 </div>
