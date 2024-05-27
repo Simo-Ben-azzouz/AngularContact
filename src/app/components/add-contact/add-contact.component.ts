@@ -26,6 +26,10 @@ export class AddContactComponent {
 
   newContact()
   {
+    alert('contact :'+this.contact.name+' is added');
     this.contactService.createContact(this.contact);
+    this.contact.name = '';
+    this.contact.telephone = null;
+    this.statusContact = false;
   }
 }
