@@ -1,3 +1,4 @@
+import { Contact } from './../../models/contact';
 import { Component } from '@angular/core';
 import { ContactService } from '../../services/contact.service';
 
@@ -19,5 +20,10 @@ ngOnInit() {
     console.log(contact);
     
   });
+}
+
+updateContact (contact : Contact)
+{
+  this.contactService.updateContact(contact);
 }
 }
