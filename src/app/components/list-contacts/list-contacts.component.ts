@@ -11,6 +11,8 @@ export class ListContactsComponent {
 /**
  *
  */
+statusContact = false;
+myContact! : Contact;
 contact :any;
   constructor(private contactService : ContactService){}    
     
@@ -21,9 +23,16 @@ ngOnInit() {
     
   });
 }
-
+// method
 updateContact (contact : Contact)
 {
   this.contactService.updateContact(contact);
+  this.statusContact =false;
+}
+
+editContact(contact : Contact)
+{
+  this.statusContact = !this.statusContact;
+  this.myContact = contact;
 }
 }
