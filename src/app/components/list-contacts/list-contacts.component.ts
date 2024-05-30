@@ -35,4 +35,12 @@ editContact(contact : Contact)
   this.statusContact = !this.statusContact;
   this.myContact = contact;
 }
+
+deleteContact(contact : Contact)
+{
+  if (confirm('voulez vous vraiment la supprime')) {
+    
+    this.contactService.destroyContact(contact);
+  }
+}
 }

@@ -38,5 +38,11 @@ updateContact (contact : Contact)
   this.contactDoc = this.contactsCollection.doc<Contact>(contact.id);
   this.contactDoc.update(contact);
 }
+
+destroyContact (contact : Contact)
+{
+  this.contactDoc = this.contactsCollection.doc<Contact>(contact.id);
+  this.contactDoc.delete();
+}
 }
 
